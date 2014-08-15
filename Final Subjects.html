@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Table of Courses for different majors </title>
+	<script src="jquery.min.js"></script>
+	<script src="list.js"></script>
+	<link rel="stylesheet" type="text/css" href="Final Subjects.css">
+	<meta charset ='UTF-8'>
+	</head>
+	<body>
+		<h1 style="text-align:center">List of All Math Courses </h1>
+		<div id='math_courses'>
+		<input class="search" style="margin-left:650px" placeholder="Search Courses"/>
+			<table class="center">
+				<thead>
+					<tr>
+						<th class = "sort completion">Completed</td>
+						<th class = "sort name" data-sort="name">Name</th>
+       					<th class="sort department" data-sort="department">Department</th>
+						<th class="sort code" data-sort="code">Code</th>
+						<th class="sort credit" data-sort="credit">Credits</th>
+						<th class="sort major" style="display:none" data-sort="major">Major</th>
+						<th class="sort minor" style="display:none" data-sort="minor">Minor</th>
+					</tr>
+				</thead>
+  				<tbody class='list'>
+  					<tr>
+  						<td class="completion" style="color:white">√</td>
+						<td class="name MATH1018">Concise Calculus</td>
+						<td class="department">MATH</td>
+						<td class="code">1018</td>
+						<td class="credit">4</td>
+						<td class="major"></td>
+						<td class="minor"></td>
+    				</tr>
+  				</tbody>
+			</table>
+		</div>
+		<div class="center">
+		<a href="#" class ="pages" onclick="MathPage1();return false;">1</a>
+		<a href="#" class="pages" onclick="MathPage2();return false;">2</a>
+		<a href="#" class="pages" onclick="MathPage3();return false;">3</a>
+		<a href="#" class="pages" onclick="MathPage4();return false;">4</a>
+		</div>
+		<script src="MathCourseList.js"></script>
+		<div class="center" style="padding-top:10px">
+			<h3 class="center">Available Majors in Maths:</h6>
+			<button type="button" onclick="MAEC()">MAEC</button>
+			<h3 class="center">Available Minors in Maths:</h6>
+			<button type="button" onclick="ACTM()">ACTM</button>
+		</div>
+	</body>
+</html>
+
